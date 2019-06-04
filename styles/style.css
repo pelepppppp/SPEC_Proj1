@@ -313,9 +313,9 @@ body {
     transform: scale(10);
     }
     .card .footer {
-    margin: 40px 0 0;
-    color: #d3d3d3;
-    font-size: 1rem;
+    margin: 30px 0 0;
+    color: #bababa;
+    font-size: 0.80rem;
     font-weight: 300;
     text-align: center;
     }
@@ -326,7 +326,7 @@ body {
     transition: .3s ease;
     }
     .card .footer a:hover {
-    color: #bababa;
+    color: #1aa3ff;
     }
     .card.alt {
     position: absolute;
