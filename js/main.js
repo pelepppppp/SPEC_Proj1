@@ -201,7 +201,7 @@
 						classie.add(ev.target, 'menu__link--current');
 						
 						// callback
-						self.options.onItemClick(ev, itemName);
+						// self.options.onItemClick(ev, itemName); DIRI ANG LAST EDIT!!!!!!!!!!!!!!
 					}
 				});
 			});
