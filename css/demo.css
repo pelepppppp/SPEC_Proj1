@@ -320,3 +320,8 @@ body #cdawrap a:hover.carbon-poweredby {
 #menu {
 	position: fixed;
 }
+
+#bell {
+	margin-left: 85%;
+	margin-top: -30%;
+}
