@@ -51,7 +51,7 @@
 
 		// index of current menu
 		// Each level is actually a different menu so 0 is root, 1 is sub-1, 2 sub-2, etc.
-		this.current_menu = 5;
+		this.current_menu = 3;
 
 		/* Determine what current menu actually is */
 		var current_menu;

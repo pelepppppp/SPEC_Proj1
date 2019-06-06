@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAMS</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="icon" type="img/png" href="images/icon.png">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr-custom.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>	
+	<!-- Main container -->
+	<div class="container" id="menu">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<img src="images/logo.png" alt="Logo" width="70%" style="margin-top: -15%; margin-bottom: 0%;">
+				<!-- <h2 class="dummy-heading">S &nbsp;A &nbsp;M &nbsp;S</h2> -->
+			</div>
+			<!-- <div class="bp-header__main">
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--archive" data-info="Notifications"><span>Go to the archive</span></a>
+				</nav>
+			</div> -->
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<!-- <div>
+				<img src="images/bell.png" alt="Notification" width="6%" id="bell">
+			</div>			 -->
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="notifications.html">Notifications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Evaluation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">OSA</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="profile.html">Profile</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Student Tasks</a></li>
+				</ul>
+				<!-- Submenu 1-1 -->
+				<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewGrades.html">View Grades</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSubjects.html">View Subjects</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSchedule.html">View Schedule</a></li>
+				</ul>
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link active" href="evaluate.html">Evaluate Teachers</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link active" href="clubs.html">Clubs</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="ssg.html">Student Council</a></li>
+                </ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+                    <li class="menu__item" role="menuitem"><a class="menu__link active" href="profile.html">My Profile</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="changepassword.html">Change Password</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="login.html">Logout</a></li>
+                </ul>
+			</div>
+		</nav>
+	</div>
+
+              
+	<div class="container">
+        <h3 class="title2">Socio-Civic Clubs</h3>
+        <img src="img\gsp.jpg" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="Girl Scouting is a worldwide movement that provides girls and young women a non-formal, progressive educational program based on spiritual values and the idea of service. Its mission is to help Scholasticans realize their ideals of womanhood and prepare themselves for their responsibilities in the home, the nation and the world community." >
+        <img style="margin-left: -0.01%;" src="img\yes.jpg" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="Is an organization that caters to the interest of students who are into business and would like to expand their skills through inventing new products. The clubs does not only seek profit but, they contribute to the society by venturing on the needs of the environment and community.">
+        <img src="img\gab.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="Gabriela Youth Club advocates what the Filipina heroine Gabriela Silang has started which contributed to women empowerment by way of doing great service to her country. Gabriela now reclaims the voice of women to fight against all forms of injustice and oppressive structures that degrade human dignity.">
+        <img style="margin-left: -0.01%;" src="img\redCross.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="Red Youth Council is a youth program of the Philippine National Red Cross which aims to educate and involve children in the spirit of Red Cross; provide opportunities for directing and harnessing their energy and idealism into worthwhile activities within the framework of the organization.">
+        
+        <h3 class="title2">Academic Clubs</h3>
+        <img src="img\science.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="The Science Club is an organization that aims to encourage interest in Science and its applications and promote environmental awareness among its members and the student body. It also provides a venue for intellectual integration among school members thereby promoting the community spirit of the school.">
+        <img style="margin-left: -0.01%;" src="img\i.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="The ITS aims to develop members who are knowledgeable and competent with information technology as a tool for learning, in pursuit of what is true, good and beautiful. In order to realize this vision, the clubs commits itself to vigorously support and sustain the conviction.">
+        
+        <h3 class="title2">Communication/Literary Arts Clubs</h3>
+        <img src="img\blue.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="The Blue Flame is the official student publication of the High School Unit. It aims to provide the High School community relevant and balanced news reports and accurate information about the current events and features concerning the school and the nation. It aims to provide a venue for the development of the writing.">
+        <img style="margin-left: -0.01%;" src="img\page.jpg" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="The PTLC is an organization of efficient and devoted high school students. The club is involved in the performance of various activities that serve as the training ground of its members in order to develop their hidden skills; to improve their reading habits and be a good leader/follower of the club.!">
+        <img src="img\debate.jpg" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="Debate Club is a co-curricular support program of the English subject area. It provides the needed avenue where the students can hone their public speaking and analytical skills. Debate requires the integration of all the cognate skills taught under the English area, among others.">
+        <img style="margin-left: -0.01%;" src="img\pluma.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="Talino at galling sa pagsulat ng anumang akdang Filipino huhusay at uunlad sa Samahang Pluma walang alinlangang ikaw ay sisikat. Layunin nito na magkaroon ng tiwala sa sarili sa pagbui ng akda o komposisyon (maikling kuwento, tula, sanaysay atbp.) at mabasa, masuri ng mga mambabasa at maitampok ito bilang isang sining.">
+        
+        <h3 class="title2">Performing Arts Clubs</h3>
+        <img src="img\glee.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="The High School Dance Club is an organization committed to developing and honing its members’ 1) abilities to execute artistic, creative and rhythmic expression through various dances; 2) dancing skills through new approaches and styles, 3) physical and emotional fitness while expressing the self through dance.">
+        <img style="margin-left: -0.01%;" src="img\dance.jpg" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="The High School Glee Club is a performing arts club which aims to hone the musical skills especially in singing of its members, develop their self-confidence through participation in institutional activities and competitions, and be able to perform well and render services to the other sectors of the Benedictine Community">
+        
+        <h3 class="title2">Athletics Clubs</h3>
+        <img src="img\pep.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="right" title="The High School Pep Squad has been set up primarily to promote school spirit and drum up support of the student body for the HS athletes. The Squad aims to highlight the talents and skills of the students in the field of cheer dancing and cheer leading. The Pep Squad brings out the best in every member to promote school spirit and sportsmanship.!">
+        <img style="margin-left: -0.01%;" src="img\basketball.jpg" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="This program is an organized group composed of the different competing teams and individual athletes in sport Basketball. The team has to join any DepEd Manila Meet, NCR DepEd, Interschool, national or international competition as representative.">
+        
+        <h3 class="title2">Visual and Practical Arts Clubs</h3>
+        <img style="margin-bottom: 5%;" src="img\cook.png" alt="ssgLogo" class="logos"data-toggle="tooltip" data-placement="right" title="Students have a natural curiosity about cooking. Many kids, just like grown-ups, even enjoy watching cooking shows on television. While some children may not seem to care about cooking at all, in this case, students need a nudge of encouragement as a helping hand to walk them through the basics.">
+        <img style="margin-left: -0.01%; margin-bottom: 5%;" src="img\media.png" alt="ssgLogo" class="logos" data-toggle="tooltip" data-placement="left" title="The Media Arts Club is visual arts clubs open to film enthusiasts and camera loving students. The club aims to equip members with basic and working knowledge on camera operations, techniques and functions. It also aims to develop the “critical eye” of the members in analyzing and critiquing photos, films and other audio and visual materials.">
+	</div>
+
+
+
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/clubs.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

@@ -16,7 +16,10 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<!-- menu styles -->
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr-custom.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>	
@@ -50,10 +53,11 @@
 				</ul>
 				<!-- Submenu 1 -->
 				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Student Tasks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Student Tasks</a></li>
 				</ul>
 				<!-- Submenu 1-1 -->
 				<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewGrades.html">View Grades</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSubjects.html">View Subjects</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSchedule.html">View Schedule</a></li>
@@ -67,57 +71,23 @@
 				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
 					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="clubs.html">Clubs</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="ssg.html">Student Council</a></li>
-				</ul>
+					<li class="menu__item" role="menuitem"><a class="menu__link active" href="ssg.html">Student Council</a></li>
+                </ul>
 				<!-- Submenu 4 -->
 				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
 					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
-                    <li class="menu__item" role="menuitem"><a class="menu__link active" href="profile.html">My Profile</a></li>
+                    <li class="menu__item" role="menuitem"><a class="menu__link" href="profile.html">My Profile</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="changepassword.html">Change Password</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="login.html">Logout</a></li>
-				</ul>
+                </ul>
 			</div>
 		</nav>
 	</div>
 
               
-    <div>
-		<h3 class="title2">Profile <span class="ay">A.Y 2019 - 2020</span></h3>
-
-		<div class="announcement" style="margin-top: 5%;">
-			<img src="images/potter.jpg" alt="Harry Potter" class="photo2">
-			<div class="speech-bubble5">
-				<h2 class="name">Harry James Potter</h2>
-				<p class="location">Student</p>
-				<p class="date">1st year - Butig</p>
-				<table id="table">
-					<tr>
-						<td class="td1">ID Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
-						<td class="td2">17200071</td>
-					</tr>
-					<tr>
-						<td class="td1">Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
-						<td class="td2">Male</td>
-					</tr>
-					<tr>
-						<td class="td1">Date of Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
-						<td class="td2">September 27, 1996</td>
-					</tr>
-					<tr>
-						<td class="td1">LRN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
-						<td class="td2">1512142065203</td>
-					</tr>
-					<tr>
-						<td class="td1">Contact #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
-						<td class="td2">09231544156</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<div class="div2">
-			<h4 style="margin-left: 1%; padding-top: 1%;">Notes:</h4>
-			<p style="margin-left: 1%; padding-top: 1%;">Allergy ko ug baki, ayaw ko pakan-a ug baki.</p>
-		</div>
+	<div class="container">
+        <h3 class="title2">Supreme Student Government <span class="ay">A.Y 2019 - 2020</span></h3>
+        <img class="ssglogo" src="img\ssg.png" alt="ssgLogo" id="ssg">
 	</div>
 
 
@@ -125,7 +95,7 @@
 	<!-- /view -->
 	<script src="js/classie.js"></script>
 	<script src="js/dummydata.js"></script>
-	<script src="js/profile.js"></script>
+	<script src="js/clubs.js"></script>
 	<script>
 	(function() {
 		var menuEl = document.getElementById('ml-menu'),

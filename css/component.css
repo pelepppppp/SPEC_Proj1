@@ -356,3 +356,45 @@
 .active {
 	color: #1aa3ff;
 }
+
+.logos{
+	width: 560px;
+	height: 560px;
+	margin-top: 50px;
+	margin-left: 23%;
+	opacity: 0.5;
+}
+.logos:hover{
+	opacity: 1;
+}
+
+.icon {
+	font-family: 'feather';
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	speak: none;
+	opacity: 0.8;
+}
+
+.title2 {
+	margin-left: 23%;
+	color: #fff;
+	font-weight: 500;
+	margin-right: 2%;
+	font-size: 1.2rem;
+	margin-bottom: -2%;
+	margin-top: 3%;
+}
+
+#ssg{
+	width: 50%;
+	opacity: 0.5;
+	margin-top: 50px;
+	margin-left: 33%
+}
