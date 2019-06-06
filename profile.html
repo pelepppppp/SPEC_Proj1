@@ -5,11 +5,11 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blueprint: Multi-Level Menu</title>
+	<title>SAMS</title>
 	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
 	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
 	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="img/png" href="images/icon.png">
 	<!-- food icons -->
 	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
 	<!-- demo styles -->
@@ -19,51 +19,44 @@
 	<script src="js/modernizr-custom.js"></script>
 </head>
 
-<body>
+<body>	
 	<!-- Main container -->
-	<div class="container">
+	<div class="container" id="menu">
 		<!-- Blueprint header -->
 		<header class="bp-header cf">
 			<div class="dummy-logo">
-				<div class="dummy-icon foodicon foodicon--coconut"></div>
-				<h2 class="dummy-heading">Fooganic</h2>
+				<img src="images/logo.png" alt="Logo" width="70%" style="margin-top: -15%; margin-bottom: 0%;">
+				<!-- <h2 class="dummy-heading">S &nbsp;A &nbsp;M &nbsp;S</h2> -->
 			</div>
-			<div class="bp-header__main">
-				<span class="bp-header__present">Blueprint <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
-				<h1 class="bp-header__title">Multi-Level Menu</h1>
+			<!-- <div class="bp-header__main">
 				<nav class="bp-nav">
-					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
-					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" data-info="Notifications"><span>Go to the archive</span></a>
 				</nav>
-			</div>
+			</div> -->
 		</header>
 		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
 		<nav id="ml-menu" class="menu">
+			<!-- <div>
+				<img src="images/bell.png" alt="Notification" width="6%" id="bell">
+			</div>			 -->
 			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
 			<div class="menu__wrap">
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Vegetables</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Fruits</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Grains</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Mylk &amp; Drinks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="notifications.html">Notifications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Evaluation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">OSA</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="profile.html">Profile</a></li>
 				</ul>
 				<!-- Submenu 1 -->
 				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Stalk Vegetables</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Roots &amp; Seeds</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Cabbages</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Salad Greens</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Mushrooms</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>
+						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Student Tasks</a></li>
 				</ul>
 				<!-- Submenu 1-1 -->
 				<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewGrades.html">View Grades</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSubjects.html">View Subjects</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSchedule.html">View Schedule</a></li>
 				</ul>
 				<!-- Submenu 2 -->
 				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
@@ -81,12 +74,8 @@
 				</ul>
 				<!-- Submenu 3 -->
 				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Buckwheat</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Millet</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Quinoa</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wild Rice</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Durum Wheat</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Promo Packs</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Clubs</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Student Council</a></li>
 				</ul>
 				<!-- Submenu 3-1 -->
 				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
@@ -97,11 +86,10 @@
 				</ul>
 				<!-- Submenu 4 -->
 				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Grain Mylks</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Seed Mylks</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylks</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nutri Drinks</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Selection</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+                    <li class="menu__item" role="menuitem"><a class="menu__link active" href="profile.html">My Profile</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="changepassword.html">Change Password</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="login.html">Logout</a></li>
 				</ul>
 				<!-- Submenu 4-1 -->
 				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
@@ -111,15 +99,54 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="content">
-			<p class="info">Please choose a category</p>
-			<!-- Ajax loaded content here -->
+	</div>
+
+              
+    <div>
+		<h3 class="title2">Profile <span class="ay">A.Y 2019 - 2020</span></h3>
+
+		<div class="announcement" style="margin-top: 5%;">
+			<img src="images/potter.jpg" alt="Harry Potter" class="photo2">
+			<div class="speech-bubble5">
+				<h2 class="name">Harry James Potter</h2>
+				<p class="location">Student</p>
+				<p class="date">1st year - Butig</p>
+				<table id="table">
+					<tr>
+						<td class="td1">ID Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+						<td class="td2">17200071</td>
+					</tr>
+					<tr>
+						<td class="td1">Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+						<td class="td2">Male</td>
+					</tr>
+					<tr>
+						<td class="td1">Date of Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+						<td class="td2">September 27, 1996</td>
+					</tr>
+					<tr>
+						<td class="td1">LRN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+						<td class="td2">1512142065203</td>
+					</tr>
+					<tr>
+						<td class="td1">Contact #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+						<td class="td2">09231544156</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="div2">
+			<h4 style="margin-left: 1%; padding-top: 1%;">Notes:</h4>
+			<p style="margin-left: 1%; padding-top: 1%;">Allergy ko ug baki, ayaw ko pakan-a ug baki.</p>
 		</div>
 	</div>
+
+
+
 	<!-- /view -->
 	<script src="js/classie.js"></script>
 	<script src="js/dummydata.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/profile.js"></script>
 	<script>
 	(function() {
 		var menuEl = document.getElementById('ml-menu'),

@@ -42,11 +42,11 @@
 			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
 			<div class="menu__wrap">
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Home</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="#">Notifications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link active" data-submenu="submenu-1" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="notifications.html">Notifications</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Evaluation</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">OSA</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Profile</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="profile.html">Profile</a></li>
 				</ul>
 				<!-- Submenu 1 -->
 				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
@@ -54,9 +54,10 @@
 				</ul>
 				<!-- Submenu 1-1 -->
 				<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="index.html">Home</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewGrades.html">View Grades</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSubjects.html">View Subjects</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">View Schedule</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSchedule.html">View Schedule</a></li>
 				</ul>
 				<!-- Submenu 2 -->
 				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
@@ -86,7 +87,9 @@
 				</ul>
 				<!-- Submenu 4 -->
 				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Change Password</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="profile.html">My Profile</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="changepassword.html">Change Password</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="login.html">Logout</a></li>
 				</ul>
 				<!-- Submenu 4-1 -->

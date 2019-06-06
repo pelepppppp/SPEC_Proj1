@@ -51,7 +51,7 @@
 
 		// index of current menu
 		// Each level is actually a different menu so 0 is root, 1 is sub-1, 2 sub-2, etc.
-		this.current_menu = 0;
+		this.current_menu = 7;
 
 		/* Determine what current menu actually is */
 		var current_menu;
@@ -201,7 +201,7 @@
 						classie.add(ev.target, 'menu__link--current');
 						
 						// callback
-						self.options.onItemClick(ev, itemName);
+						// self.options.onItemClick(ev, itemName); DIRI ANG LAST EDIT!!!!!!!!!!!!!!
 					}
 				});
 			});

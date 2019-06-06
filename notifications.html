@@ -45,8 +45,8 @@
 			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
 			<div class="menu__wrap">
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="index.html">Home</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="notifications.html">Notifications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link  active" aria-owns="submenu-1" href="notifications.html">Notifications</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Evaluation</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">OSA</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="profile.html">Profile</a></li>
@@ -60,7 +60,7 @@
 						<li class="menu__item" role="menuitem"><a class="menu__link" href="index.html">Home</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link active" href="viewGrades.html">View Grades</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSubjects.html">View Subjects</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSchedule.html">View Schedule</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">View Schedule</a></li>
 				</ul>
 				<!-- Submenu 2 -->
 				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
@@ -90,7 +90,8 @@
 				</ul>
 				<!-- Submenu 4 -->
 				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
-					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+                    <li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="index.html">Home</a></li>
+                    <li class="menu__item" role="menuitem"><a class="menu__link" href="profile.html">My Profile</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="changepassword.html">Change Password</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="login.html">Logout</a></li>
 				</ul>
@@ -105,19 +106,56 @@
 	</div>
 
 	<div style="padding-bottom: 3%;">
-		<h3 class="title2">Grades <span class="ay">A.Y 2019 - 2020</span></h3>
-        <div style="margin-top: 5%; width: 100%;">
-            <div>
-                <img src="images/grade2.PNG" class="grade" alt="Grades">
+		<h3 class="title2">Notifications <span class="ay">A.Y 2019 - 2020</span></h3>
+        <div style="margin-top: 5%; width: 100%; margin-left: 3%;">
+            <div class="announcement">
+                <img src="images/minerva.jpg" alt="Minerva McGonagall" class="photo">
+                <div class="speech-bubble4">
+                    <h3 class="name">Minerva McGonagall</h3>
+                    <!-- <p class="location">Registrar's Office</p> -->
+                    <p class="date">Wednesday, April 24, 2019 12:52 PM</p>
+                    <p class="message">
+                        Your grade for Transfigurations 1 has been submitted by MINERVA MCGONAGALL.<br>
+                        Your second grading grade is 89.
+                    </p>
+                </div>
             </div>
-      </div>
+        </div>
+        <div style="margin-top: 5%; width: 100%; margin-left: 3%;">
+            <div class="announcement">
+                <img src="images/flit.jpg" alt="Filius Flitwick" class="photo">
+                <div class="speech-bubble4">
+                    <h3 class="name">Filius Flitwick</h3>
+                    <!-- <p class="location">Registrar's Office</p> -->
+                    <p class="date">Thursday, April 25, 2019 05:12 PM</p>
+                    <p class="message">
+                        Your grade for Charms 1 has been submitted by FILIUS FLITWICK.<br>
+                        Your second grading grade is 92.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 5%; width: 100%; margin-left: 3%;">
+            <div class="announcement">
+                <img src="images/hagrid.jpg" alt="Rubeus Hagrid" class="photo">
+                <div class="speech-bubble4">
+                    <h3 class="name">Rubeus Hagrid</h3>
+                    <!-- <p class="location">Registrar's Office</p> -->
+                    <p class="date">Tuesday, April 24, 2019 07:12 AM</p>
+                    <p class="message">
+                        Your grade for Care for Magical Creatures 1 has been submitted by RUBEAUS HAGRID.<br>
+                        Your second grading grade is 88.
+                    </p>
+                </div>
+            </div>
+        </div>
 	</div>
 
 
 	<!-- /view -->
 	<script src="js/classie.js"></script>
 	<script src="js/dummydata.js"></script>
-	<script src="js/viewGrades.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 	(function() {
 		var menuEl = document.getElementById('ml-menu'),
