@@ -250,6 +250,7 @@
 .menu__breadcrumbs a:last-child {
 	/* pointer-events: none; */
 	color: #1aa3ff;
+	/* margin-top: 5%; */
 }
 
 .menu__breadcrumbs a:hover,
@@ -350,4 +351,8 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+.active {
+	color: #1aa3ff;
 }

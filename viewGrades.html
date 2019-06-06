@@ -16,10 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<!-- menu styles -->
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr-custom.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 </head>
 
-<body>	
+<body style="background: #2A2B30;">	
 	<!-- Main container -->
 	<div class="container" id="menu">
 		<!-- Blueprint header -->
@@ -42,7 +45,7 @@
 			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
 			<div class="menu__wrap">
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Home</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="index.html">Home</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" aria-owns="submenu-1" href="#">Notifications</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Evaluation</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">OSA</a></li>
@@ -54,7 +57,7 @@
 				</ul>
 				<!-- Submenu 1-1 -->
 				<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewGrades.html">View Grades</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link active" href="viewGrades.html">View Grades</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="viewSubjects.html">View Subjects</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">View Schedule</a></li>
 				</ul>
@@ -99,75 +102,150 @@
 		</nav>
 	</div>
 
-	<div class="container" style="padding-bottom: 3%;">
-		<h3 class="title">Academic Announcements</h3>
-		<div class="announcement">
-			<img src="images/minerva.jpg" alt="Minerva McGonagall" class="photo">
-			<div class="speech-bubble">
-				<h3 class="name">Minerva McGonagall</h3>
-				<p class="location">Registrar's Office</p>
-				<p class="date">Wednesday, April 24, 2019 12:52 PM</p>
-				<p class="message">
-					SUSPENSION OF WORK AND CLASSES AT 3:00 PM TODAY APRIL 24, 2019<br><br>
-
-					The celebration of the National Youth Day kicks off today at 2:00 p.m. and the procession from the City Sports Center to the Basilica del Sto. Niño has been scheduled at 6:00 p.m. However, the roads for the procession route will be closed earlier. Traffic congestion is expected because of the said activity.<br><br>
-					
-					In this vein, work and classes will be until 3:00 this afternoon only due to the closure of some roads. 
-					Work and classes will resume tomorrow, April 25, 2019, except for the classes at the Lower Basic Education that have assigned non-contact activities to the students for the whole week.<br><br>
-					
-					- Vice President for Academic Affairs<br>
-					- Vice President for Administration
-				</p>
-			</div>
-		</div>
-		<div class="announcement">
-			<img src="images/minerva.jpg" alt="Minerva McGonagall" class="photo">
-			<div class="speech-bubble2">
-				<h3 class="name">Minerva McGonagall</h3>
-				<p class="location">Registrar's Office</p>
-				<p class="date">Friday, February 15, 2019 12:59 PM</p>
-				<p class="message">
-					PAYMENT THROUGH ACCREDITED CHANNELS<br><br>
-					The University will consider offsite payments made through ACCREDITED payment channels only. At the moment, GCASH is not accredited as we don't have any existing partnership with GCASH, hence, payments made through GCASH will not be received by USC.<br><br>
-					
-					We are currently investigating why GCASH included USC in their APP because as far as the University is concerned we have no existing partnership with them.<br><br>
-					
-					Be guided accordingly.<br><br>
-					
-					- Treasury Department<br>
-					Office of the Vice President for Finance
-				</p>
-			</div>
-		</div>
-		<div class="announcement">
-			<img src="images/snape.jpg" alt="Severus Snape" class="photo">
-			<div class="speech-bubble3">
-				<h3 class="name">Severus Snape</h3>
-				<p class="location">DEPARTMENT OF COMPUTER ENGINEERING</p>
-				<p class="date">Thursday, December 6, 2018 11:15 AM</p>
-				<p class="message">
-					TO ALL STUDENTS<br><br>
-
-					Please be advised that the University Tellers will be closed on December 8, 2018.<br><br><br>
-					
-					
-					
-					- Treasury Department
-				</p>
-			</div>
-		</div>
+	<div style="padding-bottom: 3%;">
+		<h3 class="title2">Your Academic Grades</h3>
+        <div style="margin-top: 5%; width: 100%;">
+            <div>
+                <img src="images/grade2.PNG" class="grade" alt="Grades">
+            </div>
+         <!-- <div class="row" style="margin-top: 2%;">
+            <table class="table table-bordered table-sm">
+               <tbody>
+				  <tr>
+					<td rowspan="2" style="width: 20%; vertical-align: middle; text-align: center; font-weight: 700;">Learning Areas</td>
+					<td colspan="4" style="width: 30%; text-align: center; font-weight: 700;">Quarter</td>
+					<td rowspan="2" style="width: 10%; vertical-align: middle; text-align: center; font-weight: 700;">Final Grade</td>
+					<td rowspan="2" style="width: 10%; vertical-align: middle; text-align: center; font-weight: 700;">Remarks</td>
+				  </tr>
+				  <tr>
+					<td style="text-align: center; font-weight: 700; width: 8%;">1</td>
+					<td style="text-align: center; font-weight: 700; width: 8%;">2</td>
+					<td style="text-align: center; font-weight: 700; width: 8%;">3</td>
+					<td style="text-align: center; font-weight: 700; width: 8%;">4</td>
+				  </tr>
+				  <tr>
+					<td>Filipino</td>
+					<td style="text-align: center;">85</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>English</td>
+					<td style="text-align: center;">90</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>Mathematics</td>
+					<td style="text-align: center;">91</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>Science</td>
+					<td style="text-align: center;">92</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>AP</td>
+					<td style="text-align: center;">89</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>EsP</td>
+					<td style="text-align: center;">94</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>TLE</td>
+					<td style="text-align: center;">95</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>MAPEH</td>
+					<td style="text-align: center;">87</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td style="padding-left: 5%;">Music</td>
+					<td style="text-align: center;">85</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td style="padding-left: 5%;">Arts</td>
+					<td style="text-align: center;">84</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td style="padding-left: 5%;">PE</td>
+					<td style="text-align: center;">87</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td style="padding-left: 5%;">Health</td>
+					<td style="text-align: center;">88</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td colspan="6" style="text-align: center; font-weight: 700;">General Average</td>
+					<td></td>
+				  </tr>
+               </tbody>
+            </table>
+         </div> -->
+      </div>
 	</div>
-
-	<!-- <div class="photo">
-		<img src="images/harry.jpg" alt="Harry Potter">
-	</div> -->
-
 
 
 	<!-- /view -->
 	<script src="js/classie.js"></script>
 	<script src="js/dummydata.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/viewGrades.js"></script>
 	<script>
 	(function() {
 		var menuEl = document.getElementById('ml-menu'),

@@ -441,3 +441,8 @@ body {
     opacity: 0;
     }
     }
+
+    #continue {
+        text-decoration: none;
+        color: #595959;
+    }
